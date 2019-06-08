@@ -10,12 +10,12 @@
     font-size: 21px;
     }
 
-    .table>tbody>tr>td, .table>thead>tr>th {
+ .table>tbody>tr>td {
         
         text-align: left;
     }
   
-  /* Add a gray background color and some padding to the footer */
+  /* Add a blue background color and some padding to the footer */
   footer {
     background-color:#0f8fde;
     padding: 25px;
