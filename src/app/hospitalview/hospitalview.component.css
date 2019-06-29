@@ -10,10 +10,13 @@
     font-size: 21px;
     }
 
- .table>tbody>tr>td {
-        
-        text-align: left;
+ .table>tbody>tr>td {    
+    text-align: left;
     }
+
+  .btn-success {
+      float: left;
+  }
   
   /* Add a blue background color and some padding to the footer */
   footer {

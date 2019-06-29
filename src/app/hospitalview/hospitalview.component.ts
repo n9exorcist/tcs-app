@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HospitalService } from '../hospital.service';
+import { Hospitals } from '../hospitals';
 
 @Component({
   selector: 'app-hospitalview',
@@ -6,10 +8,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hospitalview.component.css']
 })
 export class HospitalviewComponent implements OnInit {
-
-  constructor() { }
+  hospitals;
+  constructor( private hospitalService: HospitalService ) { }
 
   ngOnInit() {
+    this.showHospitals();
+   }
+
+  showHospitals() {
+    this.hospitals=this.hospitalService.getHospitals();
   }
 
 }

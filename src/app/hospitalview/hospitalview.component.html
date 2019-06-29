@@ -9,6 +9,9 @@
 <div class="container-fluid bg-3 text-center">    
   <h3>Hospital List</h3><br>
   <div class="row">
+      <div class="col-sm-4"><button type="button" class="btn btn-success">Sort by Hospital Name</button></div>
+      <div class="col-sm-4"></div>
+      <div class="col-sm-4"></div>
     <table class="table">
       <thead>
         <tr>
@@ -18,20 +21,10 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>John</td>
-          <td>Doe</td>
-          <td>john@example.com</td>
-        </tr>
-        <tr>
-          <td>Mary</td>
-          <td>Moe</td>
-          <td>mary@example.com</td>
-        </tr>
-        <tr>
-          <td>July</td>
-          <td>Dooley</td>
-          <td>july@example.com</td>
+      <tr *ngFor="let hospital of hospitals">
+          <td>{{hospital.hospitalname}}</td>
+          <td>{{hospital.contactnumber}}</td>
+          <td><a routerLink="/department">View</a></td>
         </tr>
       </tbody>
     </table>
