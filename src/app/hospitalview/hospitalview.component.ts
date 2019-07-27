@@ -15,6 +15,10 @@ export class HospitalviewComponent implements OnInit {
     this.showHospitals();
    }
 
+  onSorted($event){
+   console.log("clcik", $event); 
+  }
+
   showHospitals() {
     this.hospitals=this.hospitalService.getHospitals();
   }

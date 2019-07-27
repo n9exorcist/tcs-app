@@ -9,15 +9,15 @@
 <div class="container-fluid bg-3 text-center">    
   <h3>Hospital List</h3><br>
   <div class="row">
-      <div class="col-sm-4"><button type="button" class="btn btn-success">Sort by Hospital Name</button></div>
+      <div class="col-sm-4"><button type="button" class="btn btn-success" >Sort by Hospital Name</button></div>
       <div class="col-sm-4"></div>
       <div class="col-sm-4"></div>
-    <table class="table">
+    <table class="table" >
       <thead>
         <tr>
-          <th>Department Name</th>
-          <th>Contact Number</th>
-          <th>View Department</th>
+          <th sortable-column="name" sort-direction="asc" app-sortable="name" (sorted)="onSorted($event)">Department Name</th>
+          <th sortable-column="number">Contact Number</th>
+          <th sortable-column="department">View Department</th>
         </tr>
       </thead>
       <tbody>
